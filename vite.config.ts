@@ -2,6 +2,8 @@ import { defineConfig } from 'vitest/config'
 import { playwright } from '@vitest/browser-playwright'
 import { sveltekit } from '@sveltejs/kit/vite'
 
+const supportsPlaywright = process.platform !== 'freebsd'
+
 const config = defineConfig({
   plugins: [sveltekit()],
 
@@ -9,22 +11,26 @@ const config = defineConfig({
     expect: { requireAssertions: true },
 
     projects: [
-      {
-        extends: './vite.config.ts',
+      ...(supportsPlaywright
+        ? [
+            {
+              extends: './vite.config.ts',
 
-        test: {
-          name: 'client',
+              test: {
+                name: 'client',
 
-          browser: {
-            enabled: true,
-            provider: playwright(),
-            instances: [{ browser: 'chromium', headless: true }],
-          },
+                browser: {
+                  enabled: true,
+                  provider: playwright(),
+                  instances: [{ browser: 'chromium' as const, headless: true }],
+                },
 
-          include: ['src/**/*.svelte.{test,spec}.{js,ts}'],
-          exclude: ['src/lib/server/**'],
-        },
-      },
+                include: ['src/**/*.svelte.{test,spec}.{js,ts}'],
+                exclude: ['src/lib/server/**'],
+              },
+            },
+          ]
+        : []),
 
       {
         extends: './vite.config.ts',

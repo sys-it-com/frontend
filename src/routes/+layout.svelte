@@ -1,6 +1,6 @@
 <script lang="ts">
   import './styles.css'
-  import 'chota'
+  import 'chota/dist/chota.min.css'
   import { onMount } from 'svelte'
   import { SvelteToast } from '@zerodevx/svelte-toast'
   import { LeftPane, MenuItems, MenuBar } from '@freenit-framework/core'

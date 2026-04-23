@@ -4,4 +4,3 @@ export const load = ({ params }) => {
     name: params.name,
   }
 }
-
