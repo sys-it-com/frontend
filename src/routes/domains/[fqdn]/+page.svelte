@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Domain } from '@freenit-framework/core'
+  import { Domain } from 'freenit'
   import store from '$lib/store'
 
   let { data: props } = $props()

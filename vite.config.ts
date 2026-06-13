@@ -48,9 +48,10 @@ const config = defineConfig({
 if (process.env.BACKEND_URL) {
   config.server = {
     proxy: {
-      '/api': {
+      '/api/v1': {
         target: process.env.BACKEND_URL,
         changeOrigin: true,
+        ws: true,
       },
     },
   }

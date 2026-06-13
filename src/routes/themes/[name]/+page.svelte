@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Theme } from '@freenit-framework/core'
+  import { Theme } from 'freenit'
   import store from '$lib/store'
 
   let { data: props } = $props()

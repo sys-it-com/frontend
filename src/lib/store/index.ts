@@ -1,4 +1,4 @@
-import { BaseStore } from '@freenit-framework/core'
+import { BaseStore } from 'freenit'
 
 class Store extends BaseStore {
   constructor(prefix = '/api/v1') {

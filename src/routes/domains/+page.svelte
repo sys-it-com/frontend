@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Domains } from '@freenit-framework/core'
+  import { Domains } from 'freenit'
   import store from '$lib/store'
 </script>
 

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Group } from '@freenit-framework/core'
+  import { Group } from 'freenit'
   import store from '$lib/store'
 
   let { data: props } = $props()
