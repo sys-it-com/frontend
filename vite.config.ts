@@ -7,6 +7,10 @@ const supportsPlaywright = process.platform !== 'freebsd'
 const config = defineConfig({
   plugins: [sveltekit()],
 
+  optimizeDeps: {
+    include: ['events'],
+  },
+
   test: {
     expect: { requireAssertions: true },
 
