@@ -1,15 +1,9 @@
 <script lang="ts">
-  import EmailComposer from '$lib/components/mail/EmailComposer.svelte'
+  import { MailCompose } from 'freenit'
 </script>
 
-<div class="compose-page">
-  <EmailComposer />
-</div>
+<svelte:head>
+  <title>Compose — sysit</title>
+</svelte:head>
 
-<style>
-  .compose-page {
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-  }
-</style>
+<MailCompose />

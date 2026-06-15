@@ -45,13 +45,14 @@
 
 <style>
   .root {
-    height: 100dvh;
+    height: 100%;
     display: flex;
     flex-direction: column;
   }
 
   .main {
-    height: 100%;
+    flex: 1;
+    min-height: 0;
     width: 100%;
   }
 </style>

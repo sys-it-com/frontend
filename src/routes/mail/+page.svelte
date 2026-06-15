@@ -1,49 +1,9 @@
 <script lang="ts">
-  import EmailList from '$lib/components/mail/EmailList.svelte'
-  import EmailViewer from '$lib/components/mail/EmailViewer.svelte'
+  import { Mail } from 'freenit'
 </script>
 
-<div class="mail-page">
-  <div class="email-list-panel">
-    <EmailList />
-  </div>
-  <div class="email-viewer-panel">
-    <EmailViewer />
-  </div>
-</div>
+<svelte:head>
+  <title>Mail — sysit</title>
+</svelte:head>
 
-<style>
-  .mail-page {
-    display: flex;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-  }
-
-  .email-list-panel {
-    width: 340px;
-    flex-shrink: 0;
-    overflow: hidden;
-  }
-
-  .email-viewer-panel {
-    flex: 1;
-    overflow: hidden;
-  }
-
-  @media (max-width: 768px) {
-    .mail-page {
-      flex-direction: column;
-    }
-
-    .email-list-panel {
-      width: 100%;
-      height: 45%;
-      flex-shrink: 0;
-    }
-
-    .email-viewer-panel {
-      flex: 1;
-    }
-  }
-</style>
+<Mail />
