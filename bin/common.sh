@@ -2,7 +2,7 @@
 
 
 export BIN_DIR=`dirname $0`
-export PROJECT_ROOT="${BIN_DIR}/.."
+export PROJECT_ROOT=`realpath "${BIN_DIR}/.."`
 export OFFLINE=${OFFLINE:=no}
 
 

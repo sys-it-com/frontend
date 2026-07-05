@@ -1,9 +1,9 @@
 <script lang="ts">
-  import { Jabber } from 'freenit'
+  import { Chat } from 'freenit'
 </script>
 
 <svelte:head>
-  <title>Jabber</title>
+  <title>Chat</title>
 </svelte:head>
 
-<Jabber />
+<Chat />

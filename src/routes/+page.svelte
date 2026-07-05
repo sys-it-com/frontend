@@ -1095,42 +1095,6 @@
 </footer>
 
 <style>
-  :root {
-    --bg-color: #ffffff;
-    --bg-secondary-color: #f5f7fb;
-    --color-primary: #2f63f0;
-    --color-lightGrey: #d9e0eb;
-    --color-grey: #60708a;
-    --color-darkGrey: #1b2433;
-    --color-error: #d43939;
-    --color-success: #28bd14;
-    --grid-maxWidth: 120rem;
-    --grid-gutter: 2rem;
-    --font-size: 1.6rem;
-    --font-color: #333333;
-    --font-family-sans: sans-serif;
-    --font-family-mono: monaco, Consolas, Lucida Console, monospace;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg-color: #1b2433;
-      --bg-secondary-color: #2a3546;
-      --color-primary: #5b8bf7;
-      --color-lightGrey: #3a4a5e;
-      --color-grey: #8a9ab0;
-      --color-darkGrey: #d9e0eb;
-      --color-error: #e85d5d;
-      --color-success: #4cd137;
-      --grid-maxWidth: 120rem;
-      --grid-gutter: 2rem;
-      --font-size: 1.6rem;
-      --font-color: #e0e6ed;
-      --font-family-sans: sans-serif;
-      --font-family-mono: monaco, Consolas, Lucida Console, monospace;
-    }
-  }
-
   .BnKSEzKj {
     background: var(--bg-secondary-color);
   }

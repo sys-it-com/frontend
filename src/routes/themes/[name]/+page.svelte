@@ -1,8 +1,20 @@
 <script lang="ts">
-  import { Theme } from 'freenit'
-  import store from '$lib/store'
+  import { setThemeMode, getThemeMode } from 'freenit'
+  import { browser } from '$app/environment'
 
-  let { data: props } = $props()
+  let { data } = $props()
+
+  $effect(() => {
+    if (browser && ['light', 'dark', 'auto'].includes(data.name)) {
+      setThemeMode(data.name as 'light' | 'dark' | 'auto')
+    }
+  })
 </script>
 
-<Theme name={props.name} store={store} />
+<svelte:head>
+  <title>Theme: {data.name}</title>
+</svelte:head>
+
+<div class="container">
+  <p>Theme set to <strong>{getThemeMode()}</strong>.</p>
+</div>
