@@ -182,28 +182,6 @@
       </div>
       <div class="dzGdprrI col-12 col-6-md">
         <div class="BiuWnNjs hero__img">
-          <svg class="GrQQefuN" viewBox="0 0 500 280" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <rect class="yZsicOaa" width="500" height="280" fill="#c8d4f0">
-            </rect>
-            <rect class="rZtGMpdJ" x="50" y="40" width="400" height="220" rx="10" fill="#a8bce0">
-            </rect>
-            <rect class="ftRLvHvn" x="80" y="70" width="165" height="120" rx="6" fill="#8aa8d0">
-            </rect>
-            <rect class="zOPGVenI" x="260" y="70" width="162" height="55" rx="6" fill="#9ab4d8">
-            </rect>
-            <rect class="MAlskTVX" x="260" y="135" width="76" height="55" rx="6" fill="#8aa8d0">
-            </rect>
-            <rect class="TYRtKFvx" x="346" y="135" width="76" height="55" rx="6" fill="#7a9cc8">
-            </rect>
-            <rect class="xbQFrYoV" x="80" y="205" width="340" height="28" rx="6" fill="#7a9cc8">
-            </rect>
-            <circle class="vlnVwFGh" cx="100" cy="118" r="28" fill="#6a8ab8">
-            </circle>
-            <circle class="ZKEdxtzz" cx="162" cy="105" r="22" fill="#7a9cc8">
-            </circle>
-            <circle class="YrWwfXbG" cx="214" cy="120" r="18" fill="#6a8ab8">
-            </circle>
-          </svg>
         </div>
       </div>
     </div>
@@ -224,11 +202,7 @@
     <div class="IYtxXaee">
       <div class="zhIttrBd col-12 col-4-md">
         <div class="TULCbeSk">
-          <div class="AXSSxPZx svc-icon">
-            <span>
-              {data['lNpOuRXe']}
-            </span>
-          </div>
+          <img class="AXSSxPZx" src="/engineering.png" />
           <h3 class="DUQbcWDd">
             <span>
               {data['FcQqkOZL']}
@@ -260,11 +234,7 @@
       </div>
       <div class="IpugBSMX col-12 col-4-md">
         <div class="afHiHVIl">
-          <div class="AZaRRJvs svc-icon">
-            <span>
-              {data['lbAhJbBA']}
-            </span>
-          </div>
+          <img class="AXSSxPZx" src="/product.png" />
           <h3 class="xHYqkOVo">
             <span>
               {data['vMXuYvyP']}
@@ -296,11 +266,7 @@
       </div>
       <div class="XoPHvznS col-12 col-4-md">
         <div class="MRmSxNxX">
-          <div class="mHeMffAU svc-icon">
-            <span>
-              {data['vktBMrFN']}
-            </span>
-          </div>
+          <img class="AXSSxPZx" src="/market.png" />
           <h3 class="ZzqvjlEm">
             <span>
               {data['WRZYLrrD']}
@@ -411,11 +377,7 @@
         </a>
       </div>
       <div class="xRaWgFUq col-12 col-6-md">
-        <div class="qnFAwfMy exp-img">
-          <span>
-            {data['vYWelZpw']}
-          </span>
-        </div>
+        <img src="/technical.png" />
       </div>
     </div>
   </div>
@@ -436,9 +398,6 @@
       <div class="pAseNfym col-12 col-4-md">
         <div class="ZwlUhNNM why-card">
           <div class="SPTGAVjB why-img">
-            <span>
-              {data['DJEbSHok']}
-            </span>
           </div>
           <h3 class="XOmbTkDY">
             <span>
@@ -455,9 +414,6 @@
       <div class="tYCLaSpp col-12 col-4-md">
         <div class="hdaibuDU why-card">
           <div class="tmVjqItD why-img">
-            <span>
-              {data['AMjUhZGW']}
-            </span>
           </div>
           <h3 class="cJvEXKzs">
             <span>
@@ -474,9 +430,6 @@
       <div class="wRANgPlD col-12 col-4-md">
         <div class="hPaspind why-card">
           <div class="fDtoQufy why-img">
-            <span>
-              {data['giOfgtdX']}
-            </span>
           </div>
           <h3 class="PLgXMRWT">
             <span>
@@ -1219,12 +1172,8 @@
   .BiuWnNjs {
     box-sizing: border-box;
     background-color: rgb(200, 212, 240);
-    background-position-x: 0%;
-    background-position-y: 0%;
-    background-repeat: repeat;
-    background-attachment: scroll;
-    background-image: none;
-    background-size: auto;
+    background-image: url('/prva.png');
+    background-size: 100% 100%;
     background-origin: padding-box;
     background-clip: border-box;
     border-top-left-radius: 10px;
@@ -1383,26 +1332,7 @@
   }
 
   .AXSSxPZx {
-    box-sizing: border-box;
-    font-size: 2.6rem;
-    background-color: rgb(232, 238, 255);
-    background-position-x: 0%;
-    background-position-y: 0%;
-    background-repeat: repeat;
-    background-attachment: scroll;
-    background-image: none;
-    background-size: auto;
-    background-origin: padding-box;
-    background-clip: border-box;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-    width: 4.8rem;
-    height: 4.8rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    border-radius: 8px;
     margin-bottom: 1.4rem;
   }
 
@@ -1945,16 +1875,15 @@
 
   .SPTGAVjB {
     box-sizing: border-box;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
-    border-bottom-left-radius: 8px;
+    border-radius: 8px;
     height: 18rem;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 4rem;
     margin-bottom: 1.6rem;
+    background-image: url('/excellence.png');
+    background-size: 100% 100%;
   }
 
   .XOmbTkDY {
@@ -1996,16 +1925,15 @@
 
   .tmVjqItD {
     box-sizing: border-box;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
-    border-bottom-left-radius: 8px;
+    border-radius: 8px;
     height: 18rem;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 4rem;
     margin-bottom: 1.6rem;
+    background-image: url('/solutions.png');
+    background-size: 100% 100%;
   }
 
   .cJvEXKzs {
@@ -2047,16 +1975,15 @@
 
   .fDtoQufy {
     box-sizing: border-box;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
-    border-bottom-left-radius: 8px;
+    border-radius: 8px;
     height: 18rem;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 4rem;
     margin-bottom: 1.6rem;
+    background-image: url('/insight.png');
+    background-size: 100% 100%;
   }
 
   .PLgXMRWT {
