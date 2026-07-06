@@ -168,12 +168,12 @@
           </span>
         </p>
         <div class="noCBWxer hero__btns">
-          <a class="IzZOtobd button primary" href="#">
+          <a class="yxlKeQZy button primary" href="#">
             <span>
               {data['SttdsuGZ']}
             </span>
           </a>
-          <a class="jBYgrycZ button secondary" href="#">
+          <a class="yxlKeQZy button secondary" href="#">
             <span>
               {data['PujjxJMz']}
             </span>
@@ -199,7 +199,7 @@
         {data['ZnpmiQSt']}
       </span>
     </p>
-    <div class="IYtxXaee">
+    <div class="IYtxXaee row row--cards">
       <div class="zhIttrBd col-12 col-4-md">
         <div class="TULCbeSk">
           <img class="AXSSxPZx" src="/engineering.png" />
@@ -1086,35 +1086,28 @@
   .yxlKeQZy {
     box-sizing: border-box;
     color: var(--color-darkGrey);
-    font-weight: 800;
-    line-height: 1.2;
-    font-size: 4rem;
     margin-top: 0px;
     margin-right: 0px;
     margin-bottom: 1.6rem;
-    margin-left: 0px;
+    margin-left: 0px !important;
   }
 
   @media (max-width: 767px) {
     .yxlKeQZy {
-      font-size: 2.8rem;
+      margin-left: 0px !important;
     }
   }
 
   @media (min-width: 768px) and (max-width: 1023px) {
     .yxlKeQZy {
-      font-size: 3.2rem;
+      margin-left: 0px !important;
     }
   }
 
   @media (min-width: 1024px) {
     .yxlKeQZy {
-      font-size: 4.2rem;
+      margin-left: 0px !important;
     }
-  }
-
-  .uAgJNNbK {
-    box-sizing: border-box;
   }
 
   .cnyWSaui {
@@ -1148,20 +1141,6 @@
   @media (max-width: 767px) {
     .noCBWxer {
       flex-direction: column;
-    }
-  }
-
-  @media (max-width: 767px) {
-    .IzZOtobd {
-      width: 100%;
-      text-align: center;
-    }
-  }
-
-  @media (max-width: 767px) {
-    .jBYgrycZ {
-      width: 100%;
-      text-align: center;
     }
   }
 
@@ -1200,53 +1179,12 @@
     }
   }
 
-  .GrQQefuN {
-    box-sizing: border-box;
-    width: 100%;
-    height: 100%;
-  }
-
-  .yZsicOaa {
-    box-sizing: border-box;
-  }
-
-  .rZtGMpdJ {
-    box-sizing: border-box;
-  }
-
-  .ftRLvHvn {
-    box-sizing: border-box;
-  }
-
-  .zOPGVenI {
-    box-sizing: border-box;
-  }
-
-  .MAlskTVX {
-    box-sizing: border-box;
-  }
-
-  .TYRtKFvx {
-    box-sizing: border-box;
-  }
-
-  .xbQFrYoV {
-    box-sizing: border-box;
-  }
-
-  .vlnVwFGh {
-    box-sizing: border-box;
-  }
-
-  .ZKEdxtzz {
-    box-sizing: border-box;
-  }
-
-  .YrWwfXbG {
-    box-sizing: border-box;
-  }
-
   .WzuWwpJn {
+    box-sizing: border-box;
+    padding-top: 6.4rem;
+    padding-right: 0px;
+    padding-bottom: 6.4rem;
+    padding-left: 0px;
     text-align: center;
     background: var(--bg-color);
   }
@@ -1310,7 +1248,6 @@
 
   .IYtxXaee {
     box-sizing: border-box;
-    display: flex;
   }
 
   .zhIttrBd {
@@ -1399,30 +1336,6 @@
     padding: 2rem;
   }
 
-  .AZaRRJvs {
-    box-sizing: border-box;
-    font-size: 2.6rem;
-    background-color: rgb(232, 238, 255);
-    background-position-x: 0%;
-    background-position-y: 0%;
-    background-repeat: repeat;
-    background-attachment: scroll;
-    background-image: none;
-    background-size: auto;
-    background-origin: padding-box;
-    background-clip: border-box;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-    width: 4.8rem;
-    height: 4.8rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 1.4rem;
-  }
-
   .xHYqkOVo {
     box-sizing: border-box;
     color: var(--color-darkGrey);
@@ -1484,30 +1397,6 @@
     border-radius: 8px;
     border: 1px dotted gray;
     text-align: left;
-  }
-
-  .mHeMffAU {
-    box-sizing: border-box;
-    font-size: 2.6rem;
-    background-color: rgb(232, 238, 255);
-    background-position-x: 0%;
-    background-position-y: 0%;
-    background-repeat: repeat;
-    background-attachment: scroll;
-    background-image: none;
-    background-size: auto;
-    background-origin: padding-box;
-    background-clip: border-box;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-    width: 4.8rem;
-    height: 4.8rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 1.4rem;
   }
 
   .ZzqvjlEm {
@@ -1760,31 +1649,6 @@
 
   .xRaWgFUq {
     box-sizing: border-box;
-  }
-
-  .qnFAwfMy {
-    box-sizing: border-box;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    height: 32rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 5rem;
-  }
-
-  @media (max-width: 767px) {
-    .qnFAwfMy {
-      height: 22rem;
-    }
-  }
-
-  @media (min-width: 768px) and (max-width: 1023px) {
-    .qnFAwfMy {
-      height: 26rem;
-    }
   }
 
   .bJhGrbIq {
