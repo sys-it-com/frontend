@@ -4,11 +4,13 @@
   import { onMount } from 'svelte'
   import { SvelteToast } from '@zerodevx/svelte-toast'
   import { LeftPane, MenuItems, MenuBar, getThemeMode } from 'freenit'
+  import { initConnectivity } from '$lib/connectivity.svelte'
   import store from '$lib/store'
 
   // Force theme.svelte to load and apply the user's light/dark/auto preference
   // before the first render.
   void getThemeMode
+  initConnectivity()
 
   const options = {}
   let { children } = $props()
@@ -23,7 +25,10 @@
     await store.auth.logout()
   }
 
-  onMount(async () => { await store.auth.refresh_token() })
+  onMount(async () => {
+    await store.loadModules()
+    await store.auth.refresh_token()
+  })
 </script>
 
 <svelte:head>
