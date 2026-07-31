@@ -3,6 +3,7 @@ import { chatStore, mailStore } from 'freenit'
 import store from '$lib/store'
 
 let mailStarted = false
+let chatAutoConnectEmail: string | null = null
 
 export function initConnectivity() {
   $effect(() => {
@@ -19,14 +20,17 @@ export function initConnectivity() {
     const modules = store.modules
     const modulesLoaded = store.modulesLoaded
     const email = store.user.profile?.email
+    const chatEnabled = modulesLoaded && modules.includes('chat')
 
-    if (loggedIn && modulesLoaded && modules.includes('chat') && email) {
-      if (!chatStore.connected && !chatStore.connecting) {
+    if (loggedIn && chatEnabled && email) {
+      if (!chatStore.connected && !chatStore.connecting && chatAutoConnectEmail !== email) {
+        chatAutoConnectEmail = email
         chatStore.connect(email)
       }
     }
 
-    if (!loggedIn) {
+    if (!loggedIn || !chatEnabled || !email) {
+      chatAutoConnectEmail = null
       chatStore.disconnect()
     }
 
